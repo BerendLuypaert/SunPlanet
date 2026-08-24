@@ -70,10 +70,7 @@ a {
   width: 164px;
   height: 42px;
   object-fit: contain;
-  padding: 5px 8px;
-  background: rgba(255, 248, 232, .95);
-  border-radius: 6px;
-  box-shadow: 0 0 26px rgba(246, 177, 26, .22);
+  filter: drop-shadow(0 0 14px rgba(246, 177, 26, .34));
 }
 
 .brand strong,
@@ -618,9 +615,7 @@ details p {
   width: min(280px, 100%);
   height: auto;
   margin-bottom: 10px;
-  padding: 8px;
-  background: rgba(255, 248, 232, .96);
-  border-radius: 6px;
+  filter: drop-shadow(0 0 14px rgba(246, 177, 26, .28));
 }
 
 @keyframes orbitDrift {
