@@ -709,7 +709,7 @@ details p {
   .hero {
     min-height: 92vh;
     padding-top: 130px;
-    padding-bottom: 220px;
+    padding-bottom: 28px;
   }
 
   .brand-logo {
@@ -721,8 +721,22 @@ details p {
   }
 
   .hero-card {
-    right: 16px;
-    bottom: 24px;
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    max-width: 324px;
+    margin-top: 20px;
+    padding: 14px 18px;
+    animation: none;
+  }
+
+  .hero-card strong {
+    font-size: 1.28rem;
+  }
+
+  .hero-card p {
+    font-size: .88rem;
   }
 
   .intro,
