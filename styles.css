@@ -53,11 +53,11 @@ a {
   justify-content: space-between;
   padding: 10px 12px 10px 14px;
   color: var(--white);
-  background: rgba(14, 18, 34, .88);
-  border: 1px solid rgba(255, 250, 240, .14);
+  background: #0e1222;
+  border: 1px solid rgba(255, 250, 240, .12);
   border-radius: 8px;
-  backdrop-filter: blur(18px);
-  box-shadow: 0 16px 44px rgba(6, 9, 20, .34), inset 0 1px 0 rgba(255, 250, 240, .08);
+  backdrop-filter: none;
+  box-shadow: 0 14px 36px rgba(6, 9, 20, .32);
   overflow: hidden;
 }
 
@@ -77,13 +77,12 @@ a {
   width: 178px;
   height: 46px;
   object-fit: contain;
-  filter: drop-shadow(0 0 10px rgba(0, 0, 0, .28));
-  transition: transform .24s ease, filter .24s ease;
+  filter: none;
+  transition: transform .24s ease;
 }
 
 .brand:hover .brand-logo {
   transform: translateY(-1px) scale(1.02);
-  filter: drop-shadow(0 0 12px rgba(0, 0, 0, .34));
 }
 
 .brand strong,
@@ -154,8 +153,8 @@ a {
   width: 44px;
   height: 44px;
   padding: 10px;
-  background: rgba(255, 250, 240, .08);
-  border: 1px solid rgba(255, 250, 240, .14);
+  background: rgba(255, 250, 240, .06);
+  border: 1px solid rgba(255, 250, 240, .12);
   border-radius: 8px;
 }
 
@@ -725,7 +724,7 @@ details p {
     align-items: stretch;
     gap: 0;
     padding: 12px;
-    background: rgba(18, 13, 17, .96);
+    background: #0e1222;
     border: 1px solid rgba(255, 250, 240, .12);
     border-radius: 8px;
   }
