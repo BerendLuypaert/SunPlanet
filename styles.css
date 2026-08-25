@@ -399,7 +399,7 @@ h3 {
 .intro p:last-child {
   color: #5f5148;
   font-size: 1.08rem;
-  margin-top: clamp(82px, 7vw, 112px);
+  margin-top: clamp(120px, 9vw, 150px);
 }
 
 .feature-grid {
