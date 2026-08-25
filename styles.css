@@ -393,7 +393,7 @@ h3 {
   grid-template-columns: 1.1fr .9fr;
   gap: 60px;
   padding: 92px 0 48px;
-  align-items: start;
+  align-items: center;
 }
 
 .intro p:last-child {
