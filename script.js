@@ -1,5 +1,6 @@
 const navToggle = document.querySelector(".nav-toggle");
 const siteNav = document.querySelector(".site-nav");
+const siteHeader = document.querySelector(".site-header");
 
 navToggle?.addEventListener("click", () => {
   const isOpen = siteNav.classList.toggle("is-open");
@@ -12,6 +13,21 @@ siteNav?.querySelectorAll("a").forEach((link) => {
     navToggle?.setAttribute("aria-expanded", "false");
   });
 });
+
+let lastScrollY = window.scrollY;
+
+window.addEventListener(
+  "scroll",
+  () => {
+    const currentScrollY = window.scrollY;
+    const isScrollingDown = currentScrollY > lastScrollY;
+    const isPastHeroTop = currentScrollY > 120;
+
+    siteHeader?.classList.toggle("is-hidden", isScrollingDown && isPastHeroTop);
+    lastScrollY = Math.max(currentScrollY, 0);
+  },
+  { passive: true }
+);
 
 const revealItems = document.querySelectorAll(".reveal");
 

@@ -59,10 +59,17 @@ a {
   backdrop-filter: none;
   box-shadow: 0 14px 36px rgba(6, 9, 20, .32);
   overflow: hidden;
+  transition: transform .28s ease, opacity .28s ease;
 }
 
 .site-header::after {
   display: none;
+}
+
+.site-header.is-hidden {
+  opacity: 0;
+  transform: translate(-50%, -120%);
+  pointer-events: none;
 }
 
 .brand {
@@ -386,7 +393,7 @@ h3 {
   grid-template-columns: 1.1fr .9fr;
   gap: 60px;
   padding: 92px 0 48px;
-  align-items: end;
+  align-items: start;
 }
 
 .intro p:last-child {
