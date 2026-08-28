@@ -695,6 +695,26 @@ details p {
   filter: drop-shadow(0 0 14px rgba(246, 177, 26, .28));
 }
 
+.partner-logos {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.partner-logos img {
+  width: auto;
+  max-width: 132px;
+  max-height: 42px;
+  object-fit: contain;
+}
+
+.partner-logos img:first-child {
+  max-width: 86px;
+  max-height: 48px;
+}
+
 @keyframes orbitDrift {
   0%, 100% {
     translate: 0 0;
