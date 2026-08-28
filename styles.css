@@ -559,7 +559,8 @@ h3 {
   display: block;
   width: 100%;
   aspect-ratio: 4 / 3;
-  object-fit: cover;
+  object-fit: contain;
+  background: #151c25;
   transition: transform .5s ease;
 }
 
@@ -592,6 +593,71 @@ h3 {
   margin: 5px 0 0;
   color: rgba(255, 255, 255, .7);
   font-size: .88rem;
+}
+
+.price-list,
+.credit-list {
+  display: grid;
+  gap: 0;
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid rgba(255, 255, 255, .15);
+}
+
+.price-list li,
+.credit-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 7px 0;
+  color: rgba(255, 255, 255, .72);
+  font-size: .78rem;
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.price-list strong,
+.credit-list strong {
+  color: var(--price-yellow);
+  font-weight: 800;
+}
+
+.credit-card {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 34px;
+  margin-top: 26px;
+  padding: 28px;
+  color: var(--white);
+  background: var(--price-pink);
+}
+
+.credit-card .eyebrow {
+  color: var(--price-yellow);
+}
+
+.credit-card h3 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.credit-card p:not(.eyebrow) {
+  max-width: 420px;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, .82);
+}
+
+.credit-list {
+  margin-top: 0;
+  border-color: rgba(255, 255, 255, .32);
+}
+
+.credit-list li {
+  border-color: rgba(255, 255, 255, .22);
+}
+
+.credit-list strong {
+  color: var(--white);
 }
 
 .section-heading {
@@ -997,6 +1063,12 @@ details p {
 
   .equipment-section {
     padding: 8px 0 70px;
+  }
+
+  .credit-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 22px;
   }
 
   .equipment-card,
