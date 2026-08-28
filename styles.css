@@ -977,6 +977,16 @@ details p {
   text-align: right;
 }
 
+.site-footer .creator-link {
+  color: var(--price-yellow);
+  transition: color .2s ease;
+}
+
+.site-footer .creator-link:hover {
+  color: var(--white);
+  text-decoration: underline;
+}
+
 @media (max-width: 860px) {
   .site-header {
     top: 18px;
