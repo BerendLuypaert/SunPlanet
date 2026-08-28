@@ -659,6 +659,7 @@ h3 {
 
 details {
   background: var(--price-paper);
+  color: var(--price-dark);
   border-radius: 8px;
   border-left: 6px solid var(--price-pink);
   box-shadow: 0 12px 36px rgba(18, 13, 17, .12);
@@ -667,6 +668,7 @@ details {
 summary {
   cursor: pointer;
   padding: 22px 24px;
+  color: var(--price-dark);
   font-size: 1.05rem;
   font-weight: 800;
 }
@@ -674,7 +676,7 @@ summary {
 details p {
   margin: 0;
   padding: 0 24px 24px;
-  color: #5f5148;
+  color: #25313b;
 }
 
 .site-footer {
