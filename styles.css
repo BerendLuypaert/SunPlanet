@@ -516,6 +516,84 @@ h3 {
   color: var(--price-paper);
 }
 
+.equipment-section {
+  padding: 34px 0 98px;
+  color: var(--price-paper);
+}
+
+.equipment-section .section-heading {
+  max-width: 680px;
+}
+
+.equipment-section .section-heading > p:last-child {
+  max-width: 590px;
+  color: rgba(255, 255, 255, .72);
+}
+
+.equipment-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 18px;
+  margin-top: 34px;
+}
+
+.equipment-card {
+  grid-column: span 4;
+  overflow: hidden;
+  background: var(--price-dark);
+  border-bottom: 5px solid var(--price-pink);
+  transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.equipment-card:nth-child(4),
+.equipment-card:nth-child(5) {
+  grid-column: span 6;
+}
+
+.equipment-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, .24);
+}
+
+.equipment-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform .5s ease;
+}
+
+.equipment-card:hover img {
+  transform: scale(1.035);
+}
+
+.equipment-card > div {
+  position: relative;
+  min-height: 104px;
+  padding: 18px 20px 20px;
+}
+
+.equipment-number {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--price-yellow);
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+
+.equipment-card h3 {
+  margin: 0;
+  color: var(--white);
+  font-size: 1.12rem;
+}
+
+.equipment-card p {
+  margin: 5px 0 0;
+  color: rgba(255, 255, 255, .7);
+  font-size: .88rem;
+}
+
 .section-heading {
   max-width: 720px;
   margin-bottom: 34px;
@@ -910,10 +988,21 @@ details p {
   .intro,
   .feature-grid,
   .split-section,
+  .equipment-grid,
   .gallery,
   .booking-band,
   .hours-contact {
     grid-template-columns: 1fr;
+  }
+
+  .equipment-section {
+    padding: 8px 0 70px;
+  }
+
+  .equipment-card,
+  .equipment-card:nth-child(4),
+  .equipment-card:nth-child(5) {
+    grid-column: auto;
   }
 
   .intro {
