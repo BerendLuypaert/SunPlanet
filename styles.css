@@ -546,11 +546,6 @@ h3 {
   transition: transform .35s ease, box-shadow .35s ease;
 }
 
-.equipment-card:nth-child(4),
-.equipment-card:nth-child(5) {
-  grid-column: span 6;
-}
-
 .equipment-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 16px 30px rgba(0, 0, 0, .24);
@@ -1072,9 +1067,7 @@ details p {
     padding: 22px;
   }
 
-  .equipment-card,
-  .equipment-card:nth-child(4),
-  .equipment-card:nth-child(5) {
+  .equipment-card {
     grid-column: auto;
   }
 
