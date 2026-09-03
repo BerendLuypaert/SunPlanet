@@ -31,6 +31,8 @@ window.addEventListener(
     } else {
       siteHeader?.classList.remove("is-hidden");
       siteHeader?.classList.add("cta-only");
+      siteNav?.classList.remove("is-open");
+      navToggle?.setAttribute("aria-expanded", "false");
     }
 
     lastScrollY = Math.max(currentScrollY, 0);

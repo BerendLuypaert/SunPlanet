@@ -1102,6 +1102,10 @@ details p {
     display: none;
   }
 
+  .site-header.cta-only .site-nav {
+    display: none;
+  }
+
   .brand-logo {
     width: 138px;
   }
