@@ -693,6 +693,21 @@ h3 {
   gap: 18px;
 }
 
+.panorama-viewer {
+  width: 100%;
+  height: min(620px, 62vw);
+  min-height: 360px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, .18);
+  border-radius: 8px;
+  background: #111820;
+  box-shadow: 0 22px 50px rgba(0, 0, 0, .24);
+}
+
+.panorama-viewer .pnlm-container {
+  font-family: inherit;
+}
+
 .gallery figure {
   margin: 0;
   overflow: hidden;
@@ -1181,6 +1196,11 @@ details p {
   .gallery-section,
   .faq {
     padding: 70px 0;
+  }
+
+  .panorama-viewer {
+    height: min(540px, 86vw);
+    min-height: 300px;
   }
 
   .booking-band img {

@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.7/build/pannellum.css">
     <link rel="stylesheet" href="styles.css?v=20260903-herlaadkaart">
   </head>
   <body>
@@ -110,21 +111,9 @@
         <div class="section-heading">
           <p class="eyebrow">Binnenkijken</p>
           <h2>De sfeer van Sun Planet</h2>
+          <p>Bekijk onze studio rondom in 360° en ontdek de cabines en toestellen van Sun Planet.</p>
         </div>
-        <div class="gallery">
-          <figure>
-            <img src="assets/receptie.jpeg" alt="Receptie van Sun Planet met verzorgingsproducten">
-            <figcaption>Ruime zonnebanken</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/cabine.jpeg" alt="Ruime zonnebankcabine bij Sun Planet">
-            <figcaption>Receptie en producten</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/verlichte-cabines.png" alt="Zonnebankcabine met blauwe verlichting bij Sun Planet">
-            <figcaption>Verlichte cabines</figcaption>
-          </figure>
-        </div>
+        <div id="panorama" class="panorama-viewer" role="img" aria-label="Interactieve 360° rondleiding door Sun Planet"></div>
       </section>
 
       <section class="booking-band reveal" id="boeken">
@@ -228,6 +217,19 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.7/build/pannellum.js"></script>
+    <script>
+      pannellum.viewer("panorama", {
+        type: "equirectangular",
+        panorama: "assets/sunplanet-360.jpg",
+        autoLoad: true,
+        compass: false,
+        showControls: true,
+        hfov: 100,
+        pitch: 0,
+        yaw: 0
+      });
+    </script>
     <script src="script.js?v=20260825-scroll-header"></script>
   </body>
 </html>
