@@ -203,6 +203,18 @@ a {
   background: #fff;
 }
 
+.hero::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: clamp(54px, 10vw, 110px);
+  background: linear-gradient(to bottom, transparent 0%, rgba(37, 49, 59, .18) 34%, #25313b 100%);
+  pointer-events: none;
+}
+
 .hero-image {
   position: relative;
   z-index: 1;
