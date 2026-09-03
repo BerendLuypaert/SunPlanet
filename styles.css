@@ -77,6 +77,15 @@ a {
   pointer-events: none;
 }
 
+.site-header.cta-only .site-nav a:not(.nav-cta),
+.site-header.cta-only .nav-toggle {
+  display: none;
+}
+
+.site-header.cta-only .site-nav {
+  display: flex;
+}
+
 .brand {
   display: inline-flex;
   align-items: center;

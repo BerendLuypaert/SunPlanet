@@ -21,9 +21,18 @@ window.addEventListener(
   () => {
     const currentScrollY = window.scrollY;
     const isScrollingDown = currentScrollY > lastScrollY;
-    const isPastHeroTop = currentScrollY > 120;
+    const isAtTop = currentScrollY <= 24;
 
-    siteHeader?.classList.toggle("is-hidden", isScrollingDown && isPastHeroTop);
+    if (isAtTop) {
+      siteHeader?.classList.remove("is-hidden", "cta-only");
+    } else if (isScrollingDown) {
+      siteHeader?.classList.add("is-hidden");
+      siteHeader?.classList.remove("cta-only");
+    } else {
+      siteHeader?.classList.remove("is-hidden");
+      siteHeader?.classList.add("cta-only");
+    }
+
     lastScrollY = Math.max(currentScrollY, 0);
   },
   { passive: true }
