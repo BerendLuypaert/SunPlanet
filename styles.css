@@ -1216,8 +1216,10 @@ details p {
   }
 
   .hero-image {
-    height: auto;
-    max-height: 78vh;
+    height: 100%;
+    max-height: none;
+    object-fit: cover;
+    object-position: center;
   }
 
   .button {
