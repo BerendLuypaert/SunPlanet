@@ -1025,12 +1025,15 @@ details p {
   }
 
   .hero picture {
-    width: 112%;
-    margin-left: -6%;
+    width: 100%;
+    margin-left: 0;
+    overflow: hidden;
   }
 
   .hero picture .hero-image {
-    width: 100%;
+    width: 130%;
+    max-width: none;
+    margin-left: -15%;
   }
 
   .site-header {
