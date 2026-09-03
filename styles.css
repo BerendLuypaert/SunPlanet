@@ -1031,9 +1031,9 @@ details p {
   }
 
   .hero picture .hero-image {
-    width: 130%;
+    width: 150%;
     max-width: none;
-    margin-left: -15%;
+    margin-left: -25%;
   }
 
   .site-header {
