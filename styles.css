@@ -196,6 +196,8 @@ a {
 
 .hero-image {
   position: relative;
+  z-index: 1;
+  display: block;
   width: auto;
   max-width: 100%;
   max-height: min(760px, 88vh);
