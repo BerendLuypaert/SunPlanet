@@ -1012,6 +1012,17 @@ details p {
 }
 
 @media (max-width: 860px) {
+  .hero {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+  }
+
+  .hero picture,
+  .hero-image {
+    width: 100vw;
+    max-width: none;
+  }
+
   .site-header {
     top: 18px;
     width: calc(100% - 20px);
