@@ -1024,6 +1024,15 @@ details p {
     max-width: none;
   }
 
+  .hero picture {
+    width: 112%;
+    margin-left: -6%;
+  }
+
+  .hero picture .hero-image {
+    width: 100%;
+  }
+
   .site-header {
     top: 18px;
     width: calc(100% - 20px);
