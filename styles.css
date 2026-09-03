@@ -1014,26 +1014,29 @@ details p {
 
 @media (max-width: 860px) {
   .hero {
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
+    width: 100%;
+    margin-left: 0;
   }
 
   .hero picture,
   .hero-image {
-    width: 100vw;
+    width: 100%;
     max-width: none;
   }
 
   .hero picture {
-    width: 100%;
+    width: min(100%, 420px);
+    min-width: 320px;
     margin-left: 0;
+    margin-right: auto;
+    margin-left: auto;
     overflow: hidden;
   }
 
   .hero picture .hero-image {
-    width: 150%;
+    width: 100%;
     max-width: none;
-    margin-left: -25%;
+    margin-left: 0;
   }
 
   .site-header {
