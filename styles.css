@@ -185,8 +185,9 @@ a {
 
 .hero {
   position: relative;
-  min-height: auto;
-  display: block;
+  min-height: 0;
+  display: flex;
+  justify-content: center;
   padding: 0;
   overflow: hidden;
   color: var(--navy);
@@ -195,6 +196,9 @@ a {
 
 .hero-image {
   position: relative;
+  width: auto;
+  max-width: 100%;
+  max-height: min(760px, 88vh);
   height: auto;
   min-height: 0;
   object-fit: contain;
@@ -1027,14 +1031,16 @@ details p {
   }
 
   .hero {
-    min-height: 48vh;
+    min-height: 0;
     padding: 0;
   }
 
   .hero-image {
-    height: 48vh;
-    object-fit: cover;
-    object-position: 54% center;
+    width: 100%;
+    height: auto;
+    max-height: 82vh;
+    object-fit: contain;
+    object-position: center;
   }
 
   .brand-logo {
@@ -1147,12 +1153,12 @@ details p {
   }
 
   .hero {
-    min-height: 46vh;
+    min-height: 0;
   }
 
   .hero-image {
-    height: 46vh;
-    object-position: 50% center;
+    height: auto;
+    max-height: 78vh;
   }
 
   .button {
