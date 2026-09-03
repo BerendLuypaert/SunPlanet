@@ -113,7 +113,16 @@
           <h2>De sfeer van Sun Planet</h2>
           <p>Bekijk onze studio rondom in 360° en ontdek de cabines en toestellen van Sun Planet.</p>
         </div>
-        <div id="panorama" class="panorama-viewer" role="img" aria-label="Interactieve 360° rondleiding door Sun Planet"></div>
+        <div class="panorama-grid">
+          <div>
+            <div id="panorama" class="panorama-viewer" role="img" aria-label="Interactieve 360° rondleiding door de zonnebankcabines van Sun Planet"></div>
+            <p class="panorama-label">De zonnebankcabines</p>
+          </div>
+          <div>
+            <div id="panorama-2" class="panorama-viewer" role="img" aria-label="Interactieve 360° rondleiding door de ontvangst van Sun Planet"></div>
+            <p class="panorama-label">De receptie en ontvangst</p>
+          </div>
+        </div>
       </section>
 
       <section class="booking-band reveal" id="boeken">
@@ -222,6 +231,16 @@
       pannellum.viewer("panorama", {
         type: "equirectangular",
         panorama: "assets/sunplanet-360.jpg",
+        autoLoad: true,
+        compass: false,
+        showControls: true,
+        hfov: 100,
+        pitch: 0,
+        yaw: 0
+      });
+      pannellum.viewer("panorama-2", {
+        type: "equirectangular",
+        panorama: "assets/sunplanet-360-2.jpg",
         autoLoad: true,
         compass: false,
         showControls: true,
