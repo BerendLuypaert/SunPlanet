@@ -1053,7 +1053,8 @@ details p {
 
   .hero picture {
     width: 100%;
-    height: clamp(620px, 190vw, 760px);
+    height: auto;
+    aspect-ratio: 1003 / 1568;
     overflow: hidden;
   }
 
@@ -1062,7 +1063,7 @@ details p {
     height: 100%;
     max-width: none;
     margin-left: 0;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
   }
 
@@ -1120,7 +1121,7 @@ details p {
   .hero-image {
     width: 100%;
     height: auto;
-    max-height: 82vh;
+    max-height: none;
     object-fit: contain;
     object-position: center;
   }
@@ -1256,9 +1257,9 @@ details p {
   }
 
   .hero-image {
-    height: 100%;
+    height: auto;
     max-height: none;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
   }
 
