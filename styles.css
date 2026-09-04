@@ -1254,6 +1254,14 @@ details p {
     display: none;
   }
 
+  .site-header.cta-only .nav-toggle {
+    display: block;
+  }
+
+  .site-header.cta-only .site-nav.is-open {
+    display: flex;
+  }
+
   .brand-logo {
     width: 138px;
   }
