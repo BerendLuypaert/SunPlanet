@@ -452,6 +452,42 @@ h3 {
   color: rgba(255, 255, 255, .78);
 }
 
+.moment-section {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto 98px;
+  padding: 54px 32px;
+  color: var(--white);
+  text-align: center;
+  background: linear-gradient(135deg, var(--price-pink), #b92558);
+  border-radius: 8px;
+  box-shadow: 0 26px 80px rgba(217, 50, 104, .22);
+}
+
+.moment-section .eyebrow {
+  margin: 0 0 8px;
+  color: var(--price-yellow);
+}
+
+.moment-section h2 {
+  max-width: 700px;
+  margin: 0 auto 10px;
+}
+
+.moment-section > p:not(.eyebrow) {
+  margin: 0 auto;
+  color: rgba(255, 255, 255, .88);
+}
+
+.moment-section .button-row {
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.moment-section .button-secondary.dark {
+  color: var(--white);
+  border-color: rgba(255, 255, 255, .55);
+}
+
 .intro,
 .feature-grid,
 .split-section,
@@ -1246,6 +1282,11 @@ details p {
     gap: 18px;
     margin-bottom: 70px;
     padding: 24px;
+  }
+
+  .moment-section {
+    margin-bottom: 70px;
+    padding: 38px 24px;
   }
 
   .intro,
