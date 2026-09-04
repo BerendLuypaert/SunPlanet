@@ -910,6 +910,16 @@ details p {
   font-weight: 800;
 }
 
+.rating-link {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.rating-link:hover {
+  color: var(--white);
+}
+
 .social-links {
   display: flex;
   justify-content: center;
