@@ -720,6 +720,35 @@ h3 {
   font-weight: 800;
 }
 
+.instagram-callout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto 98px;
+  padding: 36px 42px;
+  color: var(--white);
+  background: var(--price-pink);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.instagram-callout .eyebrow {
+  margin: 0 0 8px;
+  color: var(--price-yellow);
+}
+
+.instagram-callout h2 {
+  max-width: 460px;
+  margin: 0;
+}
+
+.instagram-callout p:not(.eyebrow) {
+  margin: 0 0 20px;
+  color: rgba(255, 255, 255, .86);
+}
+
 .gallery figure {
   margin: 0;
   overflow: hidden;
@@ -1228,6 +1257,13 @@ details p {
 
   .panorama-grid {
     grid-template-columns: 1fr;
+  }
+
+  .instagram-callout {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-bottom: 70px;
+    padding: 28px 24px;
   }
 
   .booking-band img {
