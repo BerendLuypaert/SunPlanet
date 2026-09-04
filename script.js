@@ -42,6 +42,22 @@ window.addEventListener(
 
 const revealItems = document.querySelectorAll(".reveal");
 
+const todayHours = document.querySelector("#today-hours");
+const weeklyHours = {
+  0: null,
+  1: "17:00 tot 22:00",
+  2: "11:00 tot 22:00",
+  3: "11:00 tot 22:00",
+  4: "11:00 tot 22:00",
+  5: "11:00 tot 22:00",
+  6: "10:00 tot 21:00"
+};
+
+if (todayHours) {
+  const hours = weeklyHours[new Date().getDay()];
+  todayHours.textContent = hours ? `Vandaag open van ${hours}` : "Vandaag gesloten";
+}
+
 if ("IntersectionObserver" in window) {
   const observer = new IntersectionObserver(
     (entries) => {
