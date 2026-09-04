@@ -458,6 +458,7 @@ h3 {
   padding: 54px 32px;
   color: var(--white);
   text-align: center;
+  justify-items: center;
   background: linear-gradient(135deg, var(--price-pink), #b92558);
   border-radius: 8px;
   box-shadow: 0 26px 80px rgba(217, 50, 104, .22);
@@ -474,12 +475,16 @@ h3 {
 }
 
 .moment-section > p:not(.eyebrow) {
+  width: 100%;
   margin: 0 auto;
   color: rgba(255, 255, 255, .88);
 }
 
 .moment-section .button-row {
+  display: flex;
+  width: 100%;
   justify-content: center;
+  align-items: center;
   margin-top: 24px;
 }
 
