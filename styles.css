@@ -722,16 +722,23 @@ h3 {
 
 .instagram-callout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: 1fr;
+  gap: 14px;
   align-items: center;
+  justify-items: center;
   width: min(1180px, calc(100% - 32px));
   margin: 0 auto 98px;
   padding: 36px 42px;
   color: var(--white);
-  background: var(--price-pink);
+  text-align: center;
+  background: var(--navy);
+  border: 1px solid rgba(255, 255, 255, .14);
   border-radius: 8px;
   box-shadow: var(--shadow);
+}
+
+.instagram-callout > div {
+  width: 100%;
 }
 
 .instagram-callout .eyebrow {
@@ -742,10 +749,12 @@ h3 {
 .instagram-callout h2 {
   max-width: 460px;
   margin: 0;
+  margin-inline: auto;
 }
 
 .instagram-callout p:not(.eyebrow) {
-  margin: 0 0 20px;
+  max-width: 620px;
+  margin: 0 auto 20px;
   color: rgba(255, 255, 255, .86);
 }
 
