@@ -78,7 +78,6 @@ a {
   pointer-events: none;
 }
 
-.site-header.cta-only .site-nav a:not(.nav-cta),
 .site-header.cta-only .nav-toggle {
   display: none;
 }
