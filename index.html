@@ -142,18 +142,13 @@
             <div id="panorama-2" class="panorama-viewer" role="img" aria-label="Interactieve 360° rondleiding door de ontvangst van Sun Planet"></div>
             <p class="panorama-label">De receptie en ontvangst</p>
           </div>
-        </div>
-      </section>
-
-      <section class="booking-band reveal" id="contact-opnemen">
-        <img src="assets/verzorging.jpeg" alt="Verzorgde wasruimte bij Sun Planet">
-        <div>
-          <p class="eyebrow">Kom langs</p>
-          <h2>Bel ons of plan je route.</h2>
-          <p>Je hoeft geen afspraak te maken. Bel ons voor meer informatie of kom langs in de studio voor persoonlijk advies.</p>
-          <div class="button-row">
-            <a class="button button-primary" href="tel:+3211334575">Bel Sun Planet</a>
-            <a class="button button-secondary dark" href="https://www.google.com/maps/search/?api=1&query=G.+Gezellelaan+70,+3550+Heusden-Zolder" target="_blank" rel="noreferrer">Route naar Sun Planet</a>
+          <div>
+            <div id="panorama-3" class="panorama-viewer" role="img" aria-label="Interactieve 360° rondleiding door de zonnebankcabines van Sun Planet"></div>
+            <p class="panorama-label">Meer zonnebankcabines</p>
+          </div>
+          <div>
+            <div id="panorama-4" class="panorama-viewer" role="img" aria-label="Interactieve 360° rondleiding door de studio van Sun Planet"></div>
+            <p class="panorama-label">De studio van Sun Planet</p>
           </div>
         </div>
       </section>
@@ -172,7 +167,7 @@
             <p><span>Zondag</span><strong>Gesloten</strong></p>
           </div>
         </div>
-        <div class="contact-card">
+        <div class="contact-card" id="contact-opnemen">
           <p class="eyebrow">Contact</p>
           <h2>Sun Planet Heusden-Zolder</h2>
           <address>
@@ -264,6 +259,26 @@
       pannellum.viewer("panorama-2", {
         type: "equirectangular",
         panorama: "assets/sunplanet-360-2.jpg",
+        autoLoad: true,
+        compass: false,
+        showControls: true,
+        hfov: 100,
+        pitch: 0,
+        yaw: 0
+      });
+      pannellum.viewer("panorama-3", {
+        type: "equirectangular",
+        panorama: "assets/sunplanet-360-3.jpg",
+        autoLoad: true,
+        compass: false,
+        showControls: true,
+        hfov: 100,
+        pitch: 0,
+        yaw: 0
+      });
+      pannellum.viewer("panorama-4", {
+        type: "equirectangular",
+        panorama: "assets/sunplanet-360-4.jpg",
         autoLoad: true,
         compass: false,
         showControls: true,
