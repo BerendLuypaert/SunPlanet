@@ -585,7 +585,7 @@ h3 {
 }
 
 .split-copy .eyebrow {
-  color: var(--price-yellow);
+  color: var(--price-yellow) !important;
 }
 
 .split-copy p {
