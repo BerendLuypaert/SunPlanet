@@ -22,17 +22,21 @@ window.addEventListener(
     const currentScrollY = window.scrollY;
     const isScrollingDown = currentScrollY > lastScrollY;
     const isAtTop = currentScrollY <= 24;
+    const isMobile = window.matchMedia("(max-width: 860px)").matches;
 
     if (isAtTop) {
       siteHeader?.classList.remove("is-hidden", "cta-only");
     } else if (isScrollingDown) {
       siteHeader?.classList.add("is-hidden");
       siteHeader?.classList.remove("cta-only");
-    } else {
+    } else if (isMobile) {
       siteHeader?.classList.remove("is-hidden");
       siteHeader?.classList.add("cta-only");
       siteNav?.classList.remove("is-open");
       navToggle?.setAttribute("aria-expanded", "false");
+    } else {
+      siteHeader?.classList.add("is-hidden");
+      siteHeader?.classList.remove("cta-only");
     }
 
     lastScrollY = Math.max(currentScrollY, 0);
