@@ -584,6 +584,10 @@ h3 {
   align-self: center;
 }
 
+.split-copy .eyebrow {
+  color: var(--price-yellow);
+}
+
 .split-copy p {
   color: rgba(255, 250, 240, .72);
 }
